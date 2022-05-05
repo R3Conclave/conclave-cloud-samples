@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./App.scss";
 import logo1 from "./Assets/Conclave_logo_master.w&r_Conclave_logo_b&r.svg";
-import conclaveConfig from "./ConclaveCloud";
 
 function App() {
   const [dateYear] = useState(new Date().getFullYear());
@@ -16,11 +15,9 @@ function App() {
       let response: any = "";
 
       // Add Function Call here.
-      response = await conclaveConfig.functions.call(
-        "sayHello",
-        "60C5AEFCE46A44163467EC82C204AB5207B780A45527A65A6580886AECAC49D4",
-        [input]
-      );
+      //
+      //
+      //
       //
 
       setMessage(response ? response.return : "");
