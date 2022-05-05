@@ -1,0 +1,152 @@
+:root {
+  --color-main: #003245;
+  --color-secondary-blue: #2aafc8;
+  --color-secondary-blue-200: rgb(175, 229, 238);
+
+  --color-secondary-400: #008ca4;
+  --color-secondary-200: #5eb4c3;
+  --color-secondary-100: #a4d6df;
+  --color-main-grey: #f2f2f2;
+  --color-secondary-grey: #cad4d8;
+  --color-ternary-grey: #c0bfc7;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  font-size: 16px;
+  background-color: var(--color-main);
+  padding: 2rem;
+
+  .conclave-logo {
+    height: 3vmin;
+    pointer-events: none;
+  }
+
+  .conclave-cloud-logo {
+    height: 5vmin;
+    pointer-events: none;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    h1 {
+      color: var(--color-secondary-200);
+      text-shadow: 3px 3px 2px #002533;
+      text-transform: uppercase;
+    }
+  }
+
+  .main-container {
+    padding: 2rem;
+    background-color: #fcfcfc;
+    height: 60vh;
+    width: 40vw;
+    border-radius: 10px;
+    box-shadow: 6px 6px 4px #002533;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .messages-section {
+      margin: 0;
+      padding: 0;
+      overflow-y: scroll;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      height: 85%;
+      width: 100%;
+      .say-hello {
+        color: #7d7e7e;
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+      }
+      .message {
+        margin: 0;
+        background-color: var(--color-secondary-100);
+        padding: 1rem 1rem;
+        position: relative;
+        width: 95%;
+        border-radius: 1rem 1rem 1rem 0;
+        text-align: left;
+        box-shadow: 1px 2px 1px var(--color-secondary-200),
+          inset 0.5px 1px 5px #92d9e7;
+        color: var(--color-main);
+        letter-spacing: 0.05rem;
+        font-family: Poppins;
+        line-height: normal;
+        font-size: 1.5rem;
+        animation-name: messageAnimation;
+        animation-duration: 300ms;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+      }
+    }
+    .input-section {
+      min-height: max-content;
+      height: 3rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+
+      .input {
+        flex: 1;
+        height: 100%;
+        font-size: 1rem;
+        min-width: fit-content;
+        border-radius: 2rem;
+        padding: 0 1rem;
+        border: solid 2px var(--color-main);
+        &:focus {
+          border: solid 2px pink;
+        }
+      }
+      .submit-button {
+        border: none;
+        background-color: transparent;
+        height: 100%;
+        width: fit-content;
+        cursor: pointer;
+        svg {
+          height: 100%;
+          width: 100%;
+          color: var(--color-main);
+          text-align: end;
+        }
+        &:hover {
+          svg {
+            color: var(--color-secondary-400);
+            transition: color ease-in 0.1s;
+          }
+        }
+        &:focus {
+          svg {
+            color: var(--color-secondary-400);
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    margin-top: auto;
+    color: #d2d1d3;
+  }
+}
