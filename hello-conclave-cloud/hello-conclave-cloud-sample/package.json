@@ -12,7 +12,7 @@
     "@types/react-dom": "^18.0.1",
     "assert": "^2.0.0",
     "buffer": "^6.0.3",
-    "conclave-cloud-sdk": "file:../../../../../Demo Projects/conclave-cloud-sdk-1.0.0-beta1.tgz",
+    "conclave-cloud-sdk": "file:../path to file/conclave-cloud-sdk-1.0.0-beta1.tgz",
     "crypto-browserify": "^3.12.0",
     "node-sass": "^7.0.1",
     "react": "^18.0.0",
