@@ -1,8 +1,8 @@
 import { Conclave } from 'conclave-cloud-sdk'
 
 const conclaveConfig = new Conclave.create({
-    tenantID: 'T222939CCDE97C36AE95643668A8A8428370B900223FA33750DB96CFA5AF36ED',
-    projectID: '0bbd0a17e770fd076eae87584c69acb0eca54b90c97834650ba5171dc40309a9',
+    tenantID: 'TE30EC967C2E77D6F01D8C41318AF9DB2717065D566237E71D1FA7EAF9187AEF',
+    projectID: 'e1e5c1401fd34ee86a88ebb56908a4939684e74bde6929bf2fe99f36152b0c22',
 });
 
 export default conclaveConfig;
