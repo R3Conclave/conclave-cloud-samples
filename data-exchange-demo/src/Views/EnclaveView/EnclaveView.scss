@@ -1,0 +1,48 @@
+.attestation-report {
+  margin-top: 1rem;
+  background-color: var(--color-light-grey);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: 1px 1px 3px var(--color-medium-grey-shadow);
+  .attestation {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    .attestation-label {
+      font-weight: bold;
+    }
+  }
+  .attestion-info {
+    border: 1px solid var(--color-dark-grey);
+    padding: 0rem 1.5rem;
+    border-radius: var(--border-radius);
+  }
+  .attestion-description {
+    svg {
+      height: 2rem;
+    }
+    h4 {
+      text-transform: uppercase;
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    place-self: end;
+    .secure {
+      color: #19b4aa;
+    }
+    .unsecure {
+      color: #f04a50;
+    }
+  }
+  .enclave-info {
+    background-color: #f1f1e6;
+    box-shadow: inset 1px 1px 2px #ddddcb;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    font-family: Monaco, Courier New, Courier, monospace;
+    pre {
+      margin: 0;
+    }
+  }
+}
