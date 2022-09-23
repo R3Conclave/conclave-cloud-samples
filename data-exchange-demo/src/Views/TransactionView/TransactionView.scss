@@ -1,0 +1,97 @@
+.input-data {
+  background-color: var(--color-light-grey);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: 1px 1px 3px var(--color-medium-grey-shadow);
+
+  .wrapper-label {
+    svg {
+      vertical-align: middle;
+      height: 1.5rem;
+      margin-right: 5px;
+      color: var(--color-secondary);
+    }
+
+    .input-label {
+      vertical-align: middle;
+      color: var(--color-secondary);
+      font-weight: bold;
+    }
+  }
+  .input-buttons {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    input::file-selector-button {
+      font-weight: bold;
+      color: var(--color-primary);
+      padding: 0.5rem 1rem;
+      border: thin solid grey;
+      height: 3rem;
+      text-transform: uppercase;
+      border-radius: 3px;
+      cursor: pointer;
+      box-shadow: 1px 1px 2px var(--color-main-grey);
+      margin-bottom: 0.2rem;
+      &:hover {
+        color: var(--color-secondary);
+        transition: background-color ease-in 0.2s;
+      }
+    }
+    .view-data-button {
+      background-color: var(--color-primary);
+      color: var(--color-light-grey);
+      kerning: 1rem;
+      border: 1px solid #d2d1d3;
+      cursor: pointer;
+      box-shadow: 1px 1px 2px var(--color-main-grey);
+      margin-bottom: 0.2rem;
+
+      &:hover {
+        color: var(--color-secondary-light);
+        transition: background-color ease-in 0.2s;
+      }
+      &:disabled {
+        background-color: var(--color-main-grey);
+        color: var(--color-dark-grey);
+        border: 1px solid #d2d1d3;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+.view-data {
+  margin-top: 1rem;
+  thead {
+    tr {
+      th {
+        background-color: var(--color-primary);
+        color: #fcfcfc;
+        font-weight: bold;
+      }
+    }
+  }
+  .container {
+    border: 1px solid var(--color-medium-grey-shadow);
+    background-color: var(--color-light-grey);
+    box-shadow: 1px 1px 3px var(--color-medium-grey-shadow);
+    tbody {
+      tr:nth-child(even) {
+        background-color: #e9edf0;
+      }
+    }
+  }
+}
+.submit-button {
+  margin-top: 1rem;
+  margin-left: auto;
+  border: 1px solid var(--color-primary);
+  box-shadow: 1px 1px 2px var(--color-medium-grey-shadow);
+  &:disabled {
+    background-color: var(--color-main-grey);
+    color: var(--color-dark-grey);
+    border: 1px solid #d2d1d3;
+    cursor: not-allowed;
+  }
+}
